@@ -1,0 +1,28 @@
+// 主题色更改
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #4fc08d,
+    ),
+    'success': (
+      'base': #8bc34a,
+    ),
+    'warning': (
+      'base': #ffe787,
+    ),
+    'danger': (
+      'base': #7c77b9,
+    ),
+    'error': (
+      'base': #e65d6e,
+    ),
+    'info': (
+      'base': #606266,
+    ),
+  ),
+  $text-color: (
+    'primary': #3fb984,
+    'regular': #606266,
+    'secondary': #909399,
+  )
+);
