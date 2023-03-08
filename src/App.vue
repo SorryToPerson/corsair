@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-07 14:54:55
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-08 13:04:42
+ * @LastEditTime: 2023-03-08 17:22:00
  * @FilePath: /corsair/src/App.vue
  * @Description: 
 -->
@@ -13,11 +13,9 @@ const locale = zhCn;
 </script>
 
 <template>
-  <div id="app">
-    <el-config-provider :locale="locale">
-      <RouterView />
-    </el-config-provider>
-  </div>
+  <el-config-provider :locale="locale">
+    <RouterView />
+  </el-config-provider>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>

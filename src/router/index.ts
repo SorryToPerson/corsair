@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-07 16:08:27
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-07 16:13:59
+ * @LastEditTime: 2023-03-08 17:11:50
  * @FilePath: /corsair/src/router/index.ts
  * @Description:
  */
@@ -17,17 +17,17 @@ const routes: Array<RouteRecordRaw> = [
       keepAlive: true,
       requireAuth: false,
     },
-    component: () => import('@/pages/login.vue'),
+    component: () => import('@/pages/login/login.vue'),
   },
   {
     path: '/',
-    name: 'Index',
+    name: 'Home',
     meta: {
       title: '首页',
       keepAlive: true,
       requireAuth: true,
     },
-    component: () => import('@/pages/index.vue'),
+    component: () => import('@/pages/home/index.vue'),
   },
 ];
 
