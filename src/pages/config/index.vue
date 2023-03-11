@@ -2,14 +2,14 @@
  * @Author: xulibang
  * @Date: 2023-03-07 16:12:34
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-08 00:09:12
- * @FilePath: /corsair/src/pages/login.vue
+ * @LastEditTime: 2023-03-11 10:13:59
+ * @FilePath: /corsair/src/pages/config/index.vue
  * @Description: 
 -->
 <script setup lang="ts"></script>
 
 <template>
-  <div>login</div>
+  <div>config</div>
 </template>
 
 <style scoped></style>
