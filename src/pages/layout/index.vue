@@ -1,27 +1,24 @@
 <script setup lang="ts" name="layout">
-import { reactive, toRefs, onMounted } from 'vue';
+// import { reactive, toRefs, onMounted } from 'vue';
 import corsairSider from './components/corsair-sider.vue';
 import corsairHeader from './components/corsair-header.vue';
-import corsairFooter from './components/corsair-footer.vue';
+// import corsairFooter from './components/corsair-footer.vue';
 // onMounted(() => {
 // })
 </script>
 <template>
   <el-container>
-    <el-header>
-      <corsairHeader />
-    </el-header>
+    <el-aside>
+      <corsairSider />
+    </el-aside>
     <el-container>
-      <el-aside>
-        <corsairSider />
-      </el-aside>
+      <el-header>
+        <corsairHeader />
+      </el-header>
       <el-main>
         <router-view></router-view>
       </el-main>
     </el-container>
-    <el-footer>
-      <corsairFooter />
-    </el-footer>
   </el-container>
 </template>
 <style lang="scss" scoped>
@@ -33,7 +30,7 @@ import corsairFooter from './components/corsair-footer.vue';
 }
 .el-aside {
   width: 220px;
-  background-color: #8df;
+  background-color: #fff;
 }
 .el-footer {
   background-color: orange;

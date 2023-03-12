@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-07 14:54:55
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-08 14:04:56
+ * @LastEditTime: 2023-03-13 00:34:02
  * @FilePath: /corsair/vite.config.ts
  * @Description:
  */
@@ -15,6 +15,7 @@ import {
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+// icons自动导入
 import * as path from 'path';
 
 // https://vitejs.dev/config/
@@ -65,6 +66,8 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
     }),
     Components({
+      // 指定组件位置，默认是src/components
+      dirs: ['src/components'],
       resolvers: [
         ElementPlusResolver(
           // 自定义主题色需要加上这个
