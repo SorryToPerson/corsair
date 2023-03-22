@@ -13,7 +13,7 @@ const locale = zhCn;
 
 <template>
   <el-config-provider :locale="locale">
-    <router-view :key="$route.fullPath"></router-view>
+    <router-view></router-view>
   </el-config-provider>
 </template>
 

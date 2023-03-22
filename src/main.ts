@@ -2,14 +2,14 @@
  * @Author: xulibang
  * @Date: 2023-03-07 14:54:55
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-12 23:49:57
+ * @LastEditTime: 2023-03-22 19:16:41
  * @FilePath: /corsair/src/main.ts
  * @Description:
  */
 import { createApp } from 'vue';
 import App from './App.vue';
 import store from './store';
-import router from '@/router';
+import router from './router';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import '@/styles';
 

@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-07 16:08:27
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-11 10:36:40
+ * @LastEditTime: 2023-03-22 23:06:33
  * @FilePath: /corsair/src/router/index.ts
  * @Description:
  */
@@ -11,22 +11,20 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Layout',
+    redirect: '/home',
     component: () => import('@/pages/layout/index.vue'),
     children: [
       {
-        name: '首页',
-        meta: {
-          title: '首页',
-          keepAlive: true,
-          requireAuth: true,
-        },
-        path: '',
+        path: '/home',
         component: () => import('@/pages/home/index.vue'),
       },
       {
-        path: '/config',
-        component: () => import('@/pages/config/index.vue'),
+        path: '/user',
+        component: () => import('@/pages/user/index.vue'),
+      },
+      {
+        path: '/technology',
+        component: () => import('@/pages/technology/index.vue'),
       },
     ],
   },

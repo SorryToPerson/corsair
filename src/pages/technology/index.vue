@@ -2,14 +2,14 @@
  * @Author: xulibang
  * @Date: 2023-03-07 16:12:34
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-11 10:13:59
- * @FilePath: /corsair/src/pages/config/index.vue
+ * @LastEditTime: 2023-03-22 19:22:08
+ * @FilePath: /corsair/src/pages/technology/index.vue
  * @Description: 
 -->
 <script setup lang="ts"></script>
 
 <template>
-  <div>config</div>
+  <div>technology</div>
 </template>
 
 <style scoped></style>

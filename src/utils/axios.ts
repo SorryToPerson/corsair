@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-07 16:20:52
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-07 16:32:27
+ * @LastEditTime: 2023-03-22 18:23:00
  * @FilePath: /corsair/src/utils/axios.ts
  * @Description:
  */
@@ -25,9 +25,15 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   async (response: AxiosResponse): Promise<any> => {
     // do something
+    return Promise.resolve(response);
   },
   (error: any) => {
     // do something
+    //   if (!error.response) {
+    //     Message.error('网络异常，请稍后重置')
+    // } else {
+    //     Message.error(error.response.data.message)
+    // }
     return Promise.reject(error);
   },
 );
