@@ -30,6 +30,7 @@ import corsairHeader from './components/corsair-header.vue';
 }
 .el-aside {
   width: auto;
+  background-color: #565c62;
 }
 .el-footer {
   background-color: orange;

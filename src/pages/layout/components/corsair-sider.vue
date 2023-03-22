@@ -2,7 +2,7 @@
  * @Author: xulibang
  * @Date: 2023-03-11 09:55:01
  * @LastEditors: xulibang
- * @LastEditTime: 2023-03-23 00:43:36
+ * @LastEditTime: 2023-03-23 01:24:26
  * @FilePath: /corsair/src/pages/layout/components/corsair-sider.vue
  * @Description: 
 -->
@@ -20,6 +20,9 @@ const handleChangeCollapse = () => {
 };
 </script>
 <template>
+  <div class="logo">
+    <img src="~@/assets/svgs/corsair.svg" alt="" />
+  </div>
   <el-menu
     class="el-menu-vertical"
     :collapse="isCollapse"
@@ -47,9 +50,13 @@ const handleChangeCollapse = () => {
   width: 200px;
 }
 .el-menu {
+  padding-bottom: 60px;
   border-right: none;
-  padding: 60px 0;
   height: 100%;
+}
+.logo {
+  text-align: center;
+  height: 60px;
 }
 .collapse-icon {
   padding: 20px;
